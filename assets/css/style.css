@@ -51,12 +51,6 @@
   background-color: #212529;
 }
 
-.tarjeta-personalizada {
-  border: solid 1px black;
-  text-align: center;
-  text-decoration: none;
-}
-
 .cuarto-boton {
   font-weight: bolder;
   text-decoration: underline;
@@ -70,6 +64,12 @@
 
 a {
   text-decoration: none;
+}
+
+.tarjeta-personalizada {
+  border: solid 1px black;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .nav-logo {

@@ -46,17 +46,6 @@ $gotopmap: (
     }
 }
 
-// MIXIN
-
-@mixin tarjetas ($borde, $alineacion-texto, $decoracion) {
-    border: $borde;
-    text-align: $alineacion-texto;
-    text-decoration: $decoracion;
-}
-
-.tarjeta-personalizada {
-    @include tarjetas (solid 1px black, center, none) 
-}
 
 // EXTEND
 

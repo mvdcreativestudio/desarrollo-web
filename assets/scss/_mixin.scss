@@ -1,0 +1,10 @@
+
+@mixin tarjetas ($borde, $alineacion-texto, $subrayado) {
+    border: $borde;
+    text-align: $alineacion-texto;
+    @if ($subrayado == true){
+        text-decoration: underline;
+    }@else {
+        text-decoration: dotted;
+    }
+}
