@@ -8,23 +8,8 @@
 // IMPORTS
 @import "_variables.scss";
 
+
 // ELEMENTOS
-
-.boton {
-    padding: 10px 30px;
-    font-weight: bolder;
-    border: solid 2px;
-    border-radius: 5px;
-}
-
-.boton-primario {
-    @extend .boton;
-    background-color: $primario;
-    color: $secundario;
-    &:hover {
-        opacity: 0.8;
-    }
-}
 
 .lead-2 {
     font-size: 15px;
@@ -35,6 +20,7 @@
 a {
     text-decoration: none;
 }
+
 
 // NAVEGADOR
 
@@ -75,16 +61,6 @@ header {
 
 
 // BODY
-
-.gotop {
-    background-color: $primario;
-    width: 50px;
-    border: 10px solid $primario;
-    border-radius: 50px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-}
 
 .side-social {
     width: 80px;
@@ -178,7 +154,12 @@ header {
 // OPINIONES CLIENTES
 
 .card {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+    h5 {
+        border-top: solid 1px gray;
+        padding-top: 15px;
+        opacity: 0.7;
+    }
 }
 
 // FOOTER
@@ -236,3 +217,4 @@ header {
     background-color: transparent;
     border-radius: 0;
 }
+

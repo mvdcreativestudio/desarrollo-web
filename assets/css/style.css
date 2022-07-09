@@ -5,19 +5,61 @@
   max-width: 100%;
 }
 
-.boton, .boton-primario {
-  padding: 10px 30px;
-  font-weight: bolder;
-  border: solid 2px;
-  border-radius: 5px;
+.gotop {
+  background-color: #0b5ed7;
+  width: 50px;
+  border: 10px solid #0b5ed7;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
-.boton-primario {
+.boton-primario, .cuarto-boton {
   background-color: #0b5ed7;
-  color: #eee;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
-.boton-primario:hover {
-  opacity: 0.8;
+.boton-primario:hover, .cuarto-boton:hover {
+  background-color: #212529;
+}
+
+.boton-secundario {
+  background-color: #eee;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.boton-secundario:hover {
+  background-color: #212529;
+}
+
+.boton-terciario {
+  background-color: #212529;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.boton-terciario:hover {
+  background-color: #212529;
+}
+
+.tarjeta-personalizada {
+  border: solid 1px black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cuarto-boton {
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .lead-2 {
@@ -57,16 +99,6 @@ header {
 }
 header .lead {
   font-size: 20px;
-}
-
-.gotop {
-  background-color: #0b5ed7;
-  width: 50px;
-  border: 10px solid #0b5ed7;
-  border-radius: 50px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
 }
 
 .side-social {
@@ -137,7 +169,12 @@ header .lead {
 }
 
 .card {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+}
+.card h5 {
+  border-top: solid 1px gray;
+  padding-top: 15px;
+  opacity: 0.7;
 }
 
 .footer-entero {

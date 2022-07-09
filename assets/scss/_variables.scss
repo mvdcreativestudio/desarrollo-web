@@ -1,3 +1,68 @@
 $primario: #0b5ed7;
 $secundario: #eee;
 $terciario: #212529;
+
+$colores:(
+    primario: #0b5ed7,
+    secundario: #eee,
+    terciario: #212529
+);
+
+//MAPGET
+
+$gotopmap: (
+    fondo: $primario,
+    ancho: 50px,
+    borde: 10px solid $primario,
+    radio: 50px,
+    posicion: fixed,
+    abajo: 30px,
+    derecha: 30px,
+);
+
+.gotop {
+    background-color: map-get($gotopmap, fondo);
+    width: map-get($gotopmap, ancho);
+    border: map-get($gotopmap, borde);
+    border-radius: map-get($gotopmap, radio);
+    position: map-get($gotopmap, posicion);
+    bottom: map-get($gotopmap, abajo);
+    right: map-get($gotopmap, derecha);
+}
+
+// EACH
+
+@each $puesto , $color in $colores {
+    .boton-#{$puesto}{
+        background-color: $color;
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        &:hover{
+            background-color: $terciario;
+        }
+    }
+}
+
+// MIXIN
+
+@mixin tarjetas ($borde, $alineacion-texto, $decoracion) {
+    border: $borde;
+    text-align: $alineacion-texto;
+    text-decoration: $decoracion;
+}
+
+.tarjeta-personalizada {
+    @include tarjetas (solid 1px black, center, none) 
+}
+
+// EXTEND
+
+.cuarto-boton{
+    @extend .boton-primario;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
