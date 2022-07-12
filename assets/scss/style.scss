@@ -1,11 +1,41 @@
+
+
+//FUENTES
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Thin";
+    src: url(../fonts/Lato-Thin.ttf);
+}
+
+// GLOBALES
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     max-width: 100%;
-    font-family: Montserrat;
+    font-family: Lato-Regular;
 }
-
 
 
 // IMPORTS
@@ -21,12 +51,17 @@
     color: $terciario;
 }
 
-a {
-    text-decoration: none;
-}
 
 h1 {
-    font-weight: bold;
+    font-family: Lato-Black;
+}
+
+p {
+    font-family: Lato-Light;
+}
+
+h2 {
+    font-family: Lato-Bold;
 }
 
 .tarjeta-personalizada {
@@ -50,7 +85,7 @@ h1 {
 .nav-link {
     &:hover { 
     border-bottom: solid 1px white;
-    font-weight: bold;
+    font-family: Lato-Bold;
     color: white;
 }
 }
@@ -95,10 +130,6 @@ header {
     }
 }
 
-
-// ASIDE
-
-// INDEX 
 
 // QUIENES SOMOS 
 
@@ -182,9 +213,6 @@ header {
         padding: 0px;
         margin: 0px;
 }
-    h2 {
-        font-weight: bolder;
-    }
 }
 
 // CONTACTO
@@ -222,7 +250,7 @@ header {
              font-size: 14px;
         .link-footer {
             text-decoration: none;
-            font-weight: bolder;
+            font-family: Lato-Bold;
             color: white;
         }
 }
@@ -250,7 +278,7 @@ header {
 }
 
 .active {
-    font-weight: bolder;
+    font-family: Lato-Bold;
 }
 
 .form-control {
